@@ -1,19 +1,24 @@
+import { Download } from 'lucide-react';
+
 const Navbar = () => {
   return (
-    <nav className="h-20 bg-black w-full flex items-center justify-between px-10">
-      <div className="text-white text-3xl font-bold">Uchral</div>
-      <div className="flex gap-8 text-white text-lg">
-        <a href="#home" className="hover:text-gray-400">
-          Home
-        </a>
-        <a href="#about" className="hover:text-gray-400">
-          About
-        </a>
-        <a href="#projects" className="hover:text-gray-400">
-          Projects
-        </a>
-      </div>
-    </nav>
+    <nav className="flex justify-between items-center px-10 py-6 border-b border-neutral-800">
+        <h1 className="text-xl font-bold tracking-widest text-emerald-400">
+          TSUKI DEV
+        </h1>
+
+        <div className="hidden md:flex gap-8 text-sm text-neutral-300">
+          <a className="hover:text-emerald-400 transition">Home</a>
+          <a className="hover:text-emerald-400 transition">About</a>
+          <a className="hover:text-emerald-400 transition">Projects</a>
+          <a className="hover:text-emerald-400 transition">Contact</a>
+        </div>
+
+        <button className="flex items-center gap-2 bg-emerald-400 text-black px-4 py-2 rounded-full font-medium hover:scale-105 transition">
+          <Download size={16} />
+          Download CV
+        </button>
+      </nav>
   );
 };
 
