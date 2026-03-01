@@ -173,7 +173,7 @@ export default function Portfolio() {
           become the engineer I imagined 🎀.
         </p>
 
-        <p className="mt-10 text-sm text-neutral-600">
+        <p className="mt-10 text-sm text-violet-950">
           © 2026 Tsuki — Built with ambition and late night coding(but really
           tho).
         </p>
